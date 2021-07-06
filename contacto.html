@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">    
+    <title>Contacto</title>
+</head>
+<body>
+    <div id="top"></div>
+    <header id="header">        
+        <div>
+            <img class="border" id="logo" src="./images/logo.webp" alt="Logo">
+        </div>        
+        <div class="header__centro">
+            <!-- Titulo de la pagina -->
+            <div class="header__titulo">
+                <a href="index.html"><h1>Venta de hardware LOPEZ</h1></a>
+            </div>
+            <!-- Barra de busqueda -->        
+            <div class="header__busqueda">
+                <input id="buscar" class="border" type="text" placeholder="Buscar">
+                <button class="border" type="button" onclick="alert('En construccion, proximamente funcionando')">Buscar</button>
+            </div>            
+            <!-- Barra de navegacion -->
+            <nav>
+                <ul class="nav__list border">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="marcas.html">Marcas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>        
+                </ul> 
+            </nav>
+        </div>        
+
+        <div class="header__derecha">
+            <!-- Login -->
+            <div class="header__login">
+                <a class="border" href="login.html">Ingresar</a>
+                <a class="border"href="signin.html">Registrarse</a>
+            </div>
+            <div>
+                <img class="border" src="./images/imagen1.jpg" alt="imagen1">
+            </div>
+        </div>
+    </header>
+
+    <main><!-- Contacto -->
+        <section class="contacto">
+            <div class="contacto__titulo" >
+                <h2 class="titulo__seccion">Contactate con nosotros</h2>
+            </div>
+            <form action="">
+                <fieldset>
+                    <legend>Envianos un comentario:</legend>
+                    <textarea name="comentario" cols="50" rows="10" required></textarea>
+                    <div class="contacto__opciones">
+                        <div>
+                            <label for="aceptar">Desea recibir correos de nosotros?</label>
+                            <input type="checkbox" name="aceptar" value="0">
+                        </div>                    
+                        <div>
+                            <label for="experiencia">Como fue tu experiencia con la pagina?</label>
+                            <select name="experiencia">
+                                <option value="buena">Buena</option>
+                                <option value="mala">Mala</option>
+                                <option value="regular">Regular</option>
+                            </select>
+                        </div>
+                        <div class="contacto__botones">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <a id="arrow" href="#top"><img src="./images/up-arrow.png" alt="arrow"></a>
+    </main>  
+
+    <footer>
+        <!-- Redes -->        
+        <div class="footer__links">
+            <h6><a href="legales.html">Términos legales</a></h6>
+            <h6><a href="politicas.html">Políticas de privacidad</a></h6>
+        </div>
+        <div class="footer__social">
+            <div>
+                <h5 class="footer__titulo" >Redes sociales</h5>
+            </div>
+            <div class="footer__logos">
+                <a href="https://www.facebook.com" target="_blank"><h6><img class="footer__logo" src="./images/facebook.png" alt="Facebook"></h6></a>
+                <a href="https://www.instagram.com" target="_blank"><h6><img class="footer__logo" src="./images/instagram.png" alt="Instagram"></h6></a>
+                <a href="https://www.twitter.com" target="_blank"><h6><img class="footer__logo" src="./images/twitter.png" alt="Twitter"></h6></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
